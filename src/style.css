@@ -1,0 +1,81 @@
+.pagewidth {
+  border: red solid 2px;
+  width: 90vw;
+  margin: 5vw;
+  height: 400px;
+  color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carouselCont {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.carousel {
+  border: black solid 2px;
+  aspect-ratio: 1/1;
+  height: 90%;
+  display: flex;
+  /* overflow: scroll; */
+  position: relative;
+}
+
+.image-cont {
+  aspect-ratio: 1/1;
+  height: 100%;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.image-cont {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.prevBtn,
+.nextBtn {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  padding: 10px;
+  border-radius: 0 3px 3px 0;
+  color: white;
+  height: 16px;
+  margin-top: -8px;
+}
+
+.nextBtn {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prevBtn:hover,
+.nextBtn:hover {
+  background-color: #f1f1f15a;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb63;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot:hover,
+.selected {
+  background-color: #bbbbbb;
+}
