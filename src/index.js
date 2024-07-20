@@ -1,6 +1,6 @@
 import './style.css';
 
-let slideIndex = 1;
+let slideIndex = 0;
 
 const carouselCont = document.getElementsByClassName('carouselCont')[0];
 
@@ -53,11 +53,10 @@ prevSlideBtn.addEventListener('click', (event) => {
   showSlide(slideIndex);
 });
 
-//setInterval(myMethod, 5000);
-
-function myMethod() {
-  showSlide(slideIndex);
+setInterval(autoPlay, 5000);
+function autoPlay() {
   slideIndex++;
+  showSlide();
 }
 
-showSlide(1);
+showSlide();
