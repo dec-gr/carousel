@@ -1,5 +1,5 @@
 {
-  "name": "carousel",
+  "name": "@dec-gr/carousel",
   "version": "1.0.0",
   "description": "An image carousel package from the odin project",
   "private": true,

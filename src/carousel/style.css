@@ -1,0 +1,26 @@
+.image-cont {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.prevBtn:hover,
+.nextBtn:hover {
+  background-color: #f1f1f15a;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb63;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot:hover,
+.selected {
+  background-color: #bbbbbb;
+}
